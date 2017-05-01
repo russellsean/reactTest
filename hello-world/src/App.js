@@ -1,21 +1,16 @@
 import React, { Component } from 'react';
+import Footer from './Footer';
+import Header from './Header';
 
-class App extends Component {
-  constructor() {
-    super();
-    this.name = "Sean";
-  }
-  
+
+export default class App extends Component {
+
   render() {
     return (
       <div>
-        <p>
-          <h2>it's {this.name}!</h2>
-        </p>
-        <button className="btn btn-primary">Press the btn</button>
+        <Header />
+        <Footer />
       </div>
     );
   }
 }
-
-export default App;
