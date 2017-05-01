@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
 
 class App extends Component {
+  constructor() {
+    super();
+    this.name = "Sean";
+  }
+  
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          Hello React!
+      <div>
+        <p>
+          <h2>it's {this.name}!</h2>
         </p>
+        <button className="btn btn-primary">Press the btn</button>
       </div>
     );
   }
